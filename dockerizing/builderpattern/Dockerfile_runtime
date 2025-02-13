@@ -1,4 +1,0 @@
-FROM alpine
-WORKDIR /goapp
-COPY hello.exe .
-ENTRYPOINT [ "./hello.exe" ]
