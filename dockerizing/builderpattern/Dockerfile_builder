@@ -1,0 +1,6 @@
+# go 소스 코드를 컴파일해서 하나의 실행 파일(hello.exe)를 생성
+FROM golang
+WORKDIR /goapp
+COPY hello.go .
+RUN go env -w GO111MODULE=auto
+RUN go build -o hello.exe .
